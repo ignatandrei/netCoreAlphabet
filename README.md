@@ -6,7 +6,11 @@ Does not want to have third party libraries, just the Microsoft ones. That's why
 
 Also, it wants to list the important features , that's why Expando will be mentioned and HttpClient will not be here.
 
-The database is a json file, in the folder primaryData. Feel free to make a PR request
+## Contribute
+
+The database is the netCoreAlphabet.json file in the https://github.com/ignatandrei/netCoreAlphabet/tree/master/primaryData
+
+Feel free to make a PR request !
 
 # .net Core A To Z
 ## A
