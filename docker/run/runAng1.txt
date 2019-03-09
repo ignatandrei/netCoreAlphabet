@@ -1,0 +1,14 @@
+FROM node
+ARG folder_to_copy
+ENV NODE_ROOT usr/app/
+RUN npm install -g @angular/cli
+RUN mkdir -p $NODE_ROOT
+
+RUN echo "folder to  be copied is $folder_to_copy"
+
+COPY $folder_to_copy $NODE_ROOT
+WORKDIR $NODE_ROOT\$folder_to_copy
+RUN npm i 
+CMD ng serve --host 0.0.0.0 --poll 10
+EXPOSE 4200 
+EXPOSE 49153

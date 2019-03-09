@@ -1,0 +1,15 @@
+FROM node
+ARG nameapp
+ENV NODE_ROOT usr/app/
+
+RUN echo "Name angular application to be created is $nameapp"
+RUN mkdir -p $NODE_ROOT
+RUN npm install -g @angular/cli
+
+RUN ng new $nameapp --directory=$NODE_ROOT --routing=true --commit=false --defaults=true --verbose=true
+
+WORKDIR $NODE_ROOT
+
+CMD ng serve --host 0.0.0.0
+EXPOSE 4200 
+EXPOSE 49153
