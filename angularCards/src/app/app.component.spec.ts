@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { TestingCompilerFactory } from '@angular/core/testing/src/test_compiler';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -8,6 +9,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule
       ],
+      // providers: [TestingCompilerFactory],
       declarations: [
         AppComponent
       ],
