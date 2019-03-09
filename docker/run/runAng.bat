@@ -14,7 +14,7 @@ REM TESTING
 REM create image
 docker build --tag angular_test --file testAng.txt .
 REM Create container
-REM docker run -d   -p 9876:9876 --name angular_test_container angular_test
+REM docker run -d   -p 9876:9876 -p 9877:9877 --name angular_test_container angular_test
 REM copy files
 REM docker cp E:/ignatandrei/netCoreAlphabet/angularCards/. angular_test_container:/usr/app
 REM testing

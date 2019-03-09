@@ -26,11 +26,12 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome','ChromeSandbox'],
+    browsers: ['ChromeSandbox'],
     customLaunchers: {
       ChromeSandbox: {
-        base: 'Chrome',
-        flags: ['--no-sandbox', '--headless']
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox', '--headless'],
+        port:9876
       }
     },
     singleRun: false,
