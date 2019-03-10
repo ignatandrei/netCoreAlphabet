@@ -10,6 +10,8 @@ Also, it wants to list the important features , that's why Expando will be menti
 
 The database is the netCoreAlphabet.json file in the https://github.com/ignatandrei/netCoreAlphabet/tree/master/primaryData
 
+You can browse the site at https://ignatandrei.github.io/netCoreAlphabet/
+
 Feel free to make a PR request !
 
 # .net Core A To Z
