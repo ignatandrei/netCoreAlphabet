@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyMatComponent } from './my-mat/my-mat.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule
+  , MatBadgeModule, MatChipsModule, MatCardModule } from '@angular/material';
 import { AboutComponent } from './about/about.component';
 import { NetCoreCardsComponent } from './net-core-cards/net-core-cards.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,11 @@ import { NetCoreCardsComponent } from './net-core-cards/net-core-cards.component
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatBadgeModule,
+    MatChipsModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

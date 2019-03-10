@@ -1,21 +1,22 @@
-    export class Words{
+    export { arrCards, arrWords, arrTable1, };
+    export class Words {
     public constructor(init?: Partial<Words>) {
-                if(init){Object.assign(this, init);}
+                if (init) {Object.assign(this, init); }
             }
     public name: string;
     public cardsID: number;
     }
-    export class Cards{
+    export class Cards {
     public constructor(init?: Partial<Cards>) {
-                if(init){Object.assign(this, init);}
+                if (init) {Object.assign(this, init); }
             }
     public name: string;
     public ID: number;
     public OwnerID: number;
     }
-    export class Table1{
+    export class Table1 {
     public constructor(init?: Partial<Table1>) {
-                if(init){Object.assign(this, init);}
+                if (init) {Object.assign(this, init); }
             }
     public name: string;
     public ID: number;
@@ -331,5 +332,5 @@
     name: '.net Core A To Z',
     ID: 1,
     }); // ENDpush toarrTable1
-    
-    
+
+
