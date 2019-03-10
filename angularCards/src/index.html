@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>NetCoreAlphabet</title>
-  !-- <base href="/"> -->
+  <!-- <base href="/"> -->
 <script>
   var isCordovaApp = !!window.cordova;
   var hrefApp=".";
@@ -11,6 +11,7 @@
     var baseHref = window.location.href.split('/');
     baseHref.pop();
     hrefApp=baseHref.join('/') +'/';
+    //window.alert(hrefApp);
   }
     document.write('<base href="' + hrefApp+ '" />');
     </script>
