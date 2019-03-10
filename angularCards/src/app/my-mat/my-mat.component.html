@@ -5,8 +5,8 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">.NET Core Alphabet</a>
-      <a mat-list-item href="#">About</a>      
+      <a mat-list-item href="cards">.NET Core Alphabet</a>
+      <a mat-list-item href="about">About</a>      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -21,7 +21,7 @@
       </button>
       <span>NetCoreAlphabet</span>
     </mat-toolbar>
-    CLick !
+    
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
