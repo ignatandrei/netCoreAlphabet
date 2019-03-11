@@ -6,50 +6,59 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'Ubuntu-16.04'
+- job: BuildAngular
+  pool:
+    vmImage: 'Ubuntu-16.04'
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '8.x'
-  displayName: 'Install Node.js'
-  
-#- task: DotNetCoreInstaller@0
-#  displayName: 'Use .NET Core sdk 2.2.100'
-#  inputs:
-#    version: 2.2.100
-  
-#- task: NuGetToolInstaller@0
-
-#- script: |
-#    echo install globaltool
-#    dotnet tool install --global stankins.console
-#  displayName: install .net global tools
-  
-- script: |
-    cd angularCards
-    npm install -g @angular/cli
-    npm install
-    ng build --prod --build-optimizer --output-path $(Build.ArtifactStagingDirectory)/site/
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '8.x'
+    displayName: 'Install Node.js'
     
+  #- task: DotNetCoreInstaller@0
+  #  displayName: 'Use .NET Core sdk 2.2.100'
+  #  inputs:
+  #    version: 2.2.100
     
-  displayName: 'npm install and build'
+  #- task: NuGetToolInstaller@0
   
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop' 
-
-  
-- script: |
-    npm install -g q
-    npm install -g cordova
-    rsync -a $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist
-    mkdir -p $ANDROID_HOME/ndk-bundle/toolchains/mips64el-linux-android/prebuilt/linux-x86_64
-    cd cordovaCards
-    cordova platform add android
-    cordova build android   
+  #- script: |
+  #    echo install globaltool
+  #    dotnet tool install --global stankins.console
+  #  displayName: install .net global tools
     
-  displayName: 'cordova'
+  - script: |
+      cd angularCards
+      npm install -g @angular/cli
+      npm install
+      ng build --prod --build-optimizer --output-path $(Build.ArtifactStagingDirectory)/site/
+      
+      
+    displayName: 'npm install and build'
+    
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop' 
+  
+- job: BuildMobile
+  dependsOn: 
+  - BuildAngular
+  
+  pool:
+    vmImage: 'vs2017-win2016'
+  
+  steps:
+  - script: |
+      npm install -g q
+      npm install -g cordova
+      ls -l $(Build.ArtifactStagingDirectory)/site/
+      rsync -a $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist
+      mkdir -p $ANDROID_HOME/ndk-bundle/toolchains/mips64el-linux-android/prebuilt/linux-x86_64
+      cd cordovaCards
+      cordova platform add android
+      cordova build android   
+      
+    displayName: 'cordova'
   
 - task: CopyFiles@2
   inputs:
