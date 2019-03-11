@@ -48,12 +48,18 @@ jobs:
     vmImage: 'vs2017-win2016'
   
   steps:
+  - task: DownloadBuildArtifacts@0
+      displayName: 'Download Build Artifacts'
+      inputs:
+        artifactName: drop
+        downloadPath: $(Build.ArtifactStagingDirectory)
+
   - script: |
       call npm install -g q
       call npm install -g cordova
-      dir $(Build.ArtifactStagingDirectory)/site/
-      REM rsync -a $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist
-      robocopy $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist  /MIR /XD
+      dir /S /A:D $(Build.ArtifactStagingDirectory) 
+      REM rsync -a $(Build.ArtifactStagingDirectory)/site angularCards/www/dist
+      robocopy $(Build.ArtifactStagingDirectory)\site\ angularCards\www\dist  /MIR /XD
       cd cordovaCards
       call cordova platform add android
       call cordova build android   
