@@ -32,7 +32,9 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --prod --build-optimizer --output-path $(Build.ArtifactStagingDirectory)/site/
+    
+    
   displayName: 'npm install and build'
   
 - task: PublishBuildArtifacts@1
-  
+  displayName: 'Publish Artifact: drop' 
