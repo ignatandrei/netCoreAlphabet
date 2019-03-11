@@ -71,3 +71,17 @@ jobs:
         contents: 'cordovaCards/**/app*.apk'
         targetFolder: '$(Build.ArtifactStagingDirectory)/apk'
         flattenFolders: true
+        
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop' 
+  
+  - task: ArchiveFiles@2
+    displayName: 'arhive apk'
+    inputs:
+      rootFolderOrFile: '$(System.ArtifactStagingDirectory)/apk'
+      includeRootFolder: true
+      archiveType: 'zip' 
+      archiveFile: '$(Build.ArtifactStagingDirectory)/Android_NetCoreAlphabet_$(Build.BuildId).zip' 
+      replaceExistingArchive: true 
+
+  
