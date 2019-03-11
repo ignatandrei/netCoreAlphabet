@@ -31,7 +31,11 @@ steps:
     cd angularCards
     npm install -g @angular/cli
     npm install
-    #ng build --prod
-    chmod +x ./build.bat
-    ./build.bat
+    ng build --prod --build-optimizer --output-path $(Build.ArtifactStagingDirectory)/site/
+    
+    #chmod +x ./build.bat
+    #./build.bat
   displayName: 'npm install and build'
+  
+- task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop' 
