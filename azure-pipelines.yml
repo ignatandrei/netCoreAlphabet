@@ -41,7 +41,6 @@ steps:
 
   
 - script: |
-    cd angularCards
     npm install -g q
     npm install -g cordova
     cd cordovaCards
