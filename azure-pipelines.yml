@@ -44,6 +44,7 @@ steps:
     npm install -g q
     npm install -g cordova
     rsync -a angularCards/dist angularCards/www/dist
+    mkdir -p $ANDROID_HOME/ndk-bundle/toolchains/mips64el-linux-android/prebuilt/linux-x86_64
     cd cordovaCards
     cordova platform add android
     cordova build android   
