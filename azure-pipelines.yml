@@ -15,21 +15,22 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
   
-- task: DotNetCoreInstaller@0
-  displayName: 'Use .NET Core sdk 2.2.100'
-  inputs:
-    version: 2.2.100
+#- task: DotNetCoreInstaller@0
+#  displayName: 'Use .NET Core sdk 2.2.100'
+#  inputs:
+#    version: 2.2.100
   
-- task: NuGetToolInstaller@0
+#- task: NuGetToolInstaller@0
 
-- script: |
-    echo install globaltool
-    dotnet tool install --global stankins.console
-  displayName: install .net global tools
+#- script: |
+#    echo install globaltool
+#    dotnet tool install --global stankins.console
+#  displayName: install .net global tools
   
 - script: |
     cd angularCards
-    npm install -g @angular/cli
-    npm install
-    ng build --prod
+    #npm install -g @angular/cli
+    #npm install
+    #ng build --prod
+    build.bat
   displayName: 'npm install and build'
