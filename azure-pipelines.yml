@@ -49,14 +49,14 @@ jobs:
   
   steps:
   - script: |
-      npm install -g q
-      npm install -g cordova
-      ls -l $(Build.ArtifactStagingDirectory)/site/
-      rsync -a $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist
-      mkdir -p $ANDROID_HOME/ndk-bundle/toolchains/mips64el-linux-android/prebuilt/linux-x86_64
+      call npm install -g q
+      call npm install -g cordova
+      dir $(Build.ArtifactStagingDirectory)/site/
+      REM rsync -a $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist
+      robocopy $(Build.ArtifactStagingDirectory)/site/ angularCards/www/dist  /MIR /XD
       cd cordovaCards
-      cordova platform add android
-      cordova build android   
+      call cordova platform add android
+      call cordova build android   
       
     displayName: 'cordova'
   
