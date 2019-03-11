@@ -60,8 +60,8 @@ jobs:
       
     displayName: 'cordova'
   
-- task: CopyFiles@2
-  inputs:
-      contents: 'stankinsv2/solution/StankinsV2/StankinsCordova/**/app*.apk'
-      targetFolder: '$(Build.ArtifactStagingDirectory)/apk'
-      flattenFolders: true
+  - task: CopyFiles@2
+    inputs:
+        contents: 'stankinsv2/solution/StankinsV2/StankinsCordova/**/app*.apk'
+        targetFolder: '$(Build.ArtifactStagingDirectory)/apk'
+        flattenFolders: true
