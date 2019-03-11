@@ -38,4 +38,4 @@ steps:
   displayName: 'npm install and build'
   
 - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: drop' 
+  displayName: 'Publish Artifact: drop' 
