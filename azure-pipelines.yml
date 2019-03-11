@@ -25,7 +25,7 @@ steps:
 - script: |
     echo install globaltool
     dotnet tool install --global stankins.console
-    displayName: install .net global tools
+  displayName: install .net global tools
   
 - script: |
     cd angularCards
