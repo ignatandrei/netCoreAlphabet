@@ -1,2 +1,3 @@
 ng build --prod --build-optimizer
-node node_modules\angular-cli-ghpages\bin\angular-cli-ghpages
+cd ..
+node angularCards/node_modules/gh-pages/bin/gh-pages -d angularCards/dist/NetCoreAlphabet
