@@ -29,9 +29,9 @@ steps:
   
 - script: |
     cd angularCards
-    #npm install -g @angular/cli
-    #npm install
-    ng build --prod
+    npm install -g @angular/cli
+    npm install
+    #ng build --prod
     chmod +x ./build.bat
     ./build.bat
   displayName: 'npm install and build'
