@@ -6,4 +6,4 @@ REM TODO: https://github.com/angular-schule/angular-cli-ghpages
 
 copy /Y angularCards\404GitHub.txt + angularCards\dist\NetCoreAlphabet\index.html angularCards\dist\NetCoreAlphabet\404.html
 node angularCards/node_modules/gh-pages/bin/gh-pages -d angularCards/dist/NetCoreAlphabet
-robocopy angularCards/dist angularCards/www/dist  /MIR /XD
+rem robocopy angularCards/dist/NetCoreAlphabet angularCards/www/dist  /MIR /XD
