@@ -60,7 +60,7 @@ jobs:
       robocopy $(Build.ArtifactStagingDirectory)\drop\site\ cordovaCards\www\dist  /MIR /XD
       cd cordovaCards
       call cordova platform add android
-      call cordova build android   
+      call cordova build android --release  
       
     displayName: 'cordova'
   - task: AndroidSigning@3
