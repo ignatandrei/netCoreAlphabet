@@ -2,7 +2,7 @@
 [![Build Status](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_apis/build/status/ignatandrei.netCoreAlphabet?branchName=master)](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_build/latest?definitionId=3&branchName=master)
 
 ## Why
-This site wants to list all keywords and technologies  in C# / .NET Core ecosystem
+This site wants to list the most important keywords and technologies  in C# / .NET Core ecosystem
 
 Does not want to have third party libraries, just the Microsoft ones. That's why EntityFramework is here and AutoMapper will not be here.
 
