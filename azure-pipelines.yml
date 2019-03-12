@@ -65,7 +65,17 @@ jobs:
       call cordova build android   
       
     displayName: 'cordova'
-  
+  - task: AndroidSigning@3
+    inputs:
+        apkFiles: '**/*.apk' #how to change name of apk file? mystery...
+        apksign: true
+        apksignerKeystoreFile: 'keystore.jks' #from library...
+        apksignerKeystorePassword: '$(jarsignerKeystorePassword)'
+        apksignerKeystoreAlias: '$(keystoreAlias)'
+        apksignerKeyPassword: '$(jarsignerKeyPassword)'
+        zipalign: false
+
+
   - task: CopyFiles@2
     inputs:
         contents: 'cordovaCards/**/app*.apk'
@@ -75,13 +85,4 @@ jobs:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop' 
   
-  - task: ArchiveFiles@2
-    displayName: 'arhive apk'
-    inputs:
-      rootFolderOrFile: '$(System.ArtifactStagingDirectory)/apk'
-      includeRootFolder: true
-      archiveType: 'zip' 
-      archiveFile: '$(Build.ArtifactStagingDirectory)/Android_NetCoreAlphabet_$(Build.BuildId).zip' 
-      replaceExistingArchive: true 
-
   

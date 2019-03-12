@@ -1,4 +1,6 @@
 # .netCoreAlphabet
+[![Build Status](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_apis/build/status/ignatandrei.netCoreAlphabet?branchName=master)](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_build/latest?definitionId=3&branchName=master)
+
 ## Why
 This site wants to list all keywords and technologies  in C# / .NET Core ecosystem
 
