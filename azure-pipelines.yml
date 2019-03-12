@@ -56,10 +56,8 @@ jobs:
 
   - script: |
       call npm install -g q
-      call npm install -g cordova
-      dir /S /A:D /B $(Build.ArtifactStagingDirectory) 
-      REM rsync -a $(Build.ArtifactStagingDirectory)/site angularCards/www/dist
-      robocopy $(Build.ArtifactStagingDirectory)\drop\site\ angularCards\www\dist  /MIR /XD
+      call npm install -g cordova      
+      robocopy $(Build.ArtifactStagingDirectory)\drop\site\ cordovaCards\www\dist  /MIR /XD
       cd cordovaCards
       call cordova platform add android
       call cordova build android   
