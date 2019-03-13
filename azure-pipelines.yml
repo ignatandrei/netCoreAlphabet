@@ -16,17 +16,22 @@ jobs:
       versionSpec: '8.x'
     displayName: 'Install Node.js'
     
-  #- task: DotNetCoreInstaller@0
-  #  displayName: 'Use .NET Core sdk 2.2.100'
-  #  inputs:
-  #    version: 2.2.100
+  - task: DotNetCoreInstaller@0
+    displayName: 'Use .NET Core sdk 2.2.100'
+    inputs:
+      version: 2.2.100
     
-  #- task: NuGetToolInstaller@0
+  - task: NuGetToolInstaller@0
   
-  #- script: |
-  #    echo install globaltool
-  #    dotnet tool install --global stankins.console
-  #  displayName: install .net global tools
+  - script: |
+      echo install globaltool
+      dotnet tool install --global stankins.console
+    displayName: install .net global tools
+
+  - script: |
+      stankins.console execute -o ReceiveRestFromFile -a primaryData/netCoreAlphabet.json -o SenderToTypeScript -a ""  -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
+    displayName: 'json to typescript'
+    
     
   - script: |
       cd angularCards
