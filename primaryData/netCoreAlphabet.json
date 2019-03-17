@@ -253,6 +253,14 @@
                "name":"var"
             }
          ]
+      },
+      {
+         "name":"Y",
+         "words":[
+            {
+               "name":"yield"
+            }
+         ]
       }
    ]
 }
