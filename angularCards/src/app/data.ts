@@ -1,4 +1,8 @@
-
+// do not edit directly this file
+// this will be automatically generated from
+// netCoreAlphabet/primaryData/netCoreAlphabet.json
+// in a CI scenario
+// See in  azure-pipelines.yml  - stankins.console execute
 
 
 export class Words {
