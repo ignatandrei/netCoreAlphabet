@@ -3,34 +3,64 @@
 @using System.Linq;
 @using Stankins.Interfaces;
 @using System.Collections.Generic;
-@using RazorLight
-@using Stankins.Razor
+@using RazorLight;
+@using Stankins.Razor;
 
 @inherits TemplatePage<IDataToSent>
 @{
-//stankins.console execute -o ReceiveRestFromFile -a primaryData/netCoreAlphabet.json -o SenderToRazorFromFile -a primaryData/markdown.txt -o SenderOutputToFolder -a primaryData -a false
-    var lists = Model.FindAfterName("words").Value;
+
+    var wordsTable = Model.FindAfterName("words").Value;
+	var cardsTable = Model.FindAfterName("cards").Value;
     var nl = Environment.NewLine;
 
 
 
 }
-<div></div>
+
 
 @functions{
-
+class Card{
+	public string name;
+	public string ID;
+	public string OwnerID;
+	public List<Word> Words = new List<Word>();
+ }
  class Word{
-	public string id;
-	public string char;
+	public string name;
+	public string cardsID;
  }
 }
 @{
-    var tablesList = new Dictionary<string, List>();
-    
+    var cardsList = new Dictionary<string, Card>();
+    foreach (DataRow rowCard in cardsTable.Rows)
+    {
+        var t = new Card();
+        t.ID = rowCard["ID"].ToString();
+		t.name = rowCard["name"].ToString();
+		t.OwnerID = rowCard["OwnerID"].ToString();
+		cardsList.Add(t.ID,t);
+        
+	}
+	foreach (DataRow rowWord in wordsTable.Rows)
+    {
+        var t = new Word();
+        t.cardsID = rowWord["cardsID"].ToString();
+		t.name = rowWord["name"].ToString();
+		
+		cardsList[t.cardsID].Words.Add(t);
+        
+	}
 }
 
 @{
-    
+    foreach(var card in cardsList){
+		var nrWord=1;
+		<text>## @card.Value.name</text>
+		@Raw(nl)
+		foreach(var word in card.Value.Words){
+			@(nrWord++)<text>. </text>@word.name @Raw(nl)
+		}
+	}
 }
 
 <small>

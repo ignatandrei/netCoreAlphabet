@@ -30,6 +30,7 @@ jobs:
 
   - script: |
       stankins.console execute -o ReceiveRestFromFile -a primaryData/netCoreAlphabet.json -o SenderToTypeScript -a ""  -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
+      stankins.console execute -o ReceiveRestFromFile -a primaryData/netCoreAlphabet.json -o SenderToRazorFromFile -a primaryData/markdown.txt -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
     displayName: 'json to typescript'
     
     
