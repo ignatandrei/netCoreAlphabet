@@ -1,267 +1,343 @@
 {
-   "name":".net Core A To Z",
-   "cards":[
-      {
-         "name":"A",
-         "words":[            
-            {
-               "name":"async / await"
-            },
-            {
-               "name":"Auto implemented properties"
-            },
-            {
-               "name":"Anonymous methods"
-            },
-            {
-               "name":"attributes"
-            },
-            {
-               "name":"Asp.Net"
-            }
-         ]
-      },
-      {
-         "name":"B",
-         "words":[
-            {
-               "name":"Boxing"
-            }
-         ]
-      },
-      {
-         "name":"C",
-         "words":[
-            {
-               "name":"CallerInfo attributes"
-            },
-            {
-               "name":"classes"
-            }
-         ]
-      },
-      {
-         "name":"D",
-         "words":[
-            {
-               "name":"Delegates"
-            },
-            {
-               "name":"Dynamic"
-            }
-         ]
-      },
-      {
-         "name":"E",
-         "words":[
-            {
-               "name":"Expando"
-            },
-            {
-               "name":"Expression bodied members"
-            },
-            {
-               "name":"Exception filters"
-            },
-            {
-               "name":"extension methods"
-            },
-            {
-               "name":"Entity Framework"
-            },
-            {
-               "name":"Events"
-            }
-         ]
-      },
-      {
-         "name":"G",
-         "words":[
-            {
-               "name":"Generic Constraints"
-            },
-            {
-               "name":"Generics covariance / contravariance"
-            },
-            {
-               "name":"Generics"
-            }
-         ]
-      },
-      {
-         "name":"H",
-         "words":[
-            {
-               "name":"health check"
-            }
-         ]
-      },
-      {
-         "name":"I",
-         "words":[
-            {
-               "name":"IDisosable"
-            },
-            {
-               "name":"Iterators"
-            },
-            {
-               "name":"interfaces"
-            }
-         ]
-      },
-      {
-         "name":"J",
-         "words":[
-            {
-               "name":" jwt validation, authorization ,authentication "
-            }
-         ]
-      },
-      {
-         "name":"K",
-         "words":[
-            {
-               "name":"kestrel"
-            }
-         ]
-      },
-      {
-         "name":"L",
-         "words":[
-            {
-               "name":"Local functions"
-            },
-            {
-               "name":"Linq"
-            },
-            {
-               "name":"Lambda"
-            }
-         ]
-      },
-      {
-         "name":"M",
-         "words":[
-            {
-               "name":"Memory<T>"
-            }
-         ]
-      },
-      {
-         "name":"N",
-         "words":[
-            {
-               "name":"Nameof"
-            },
-            {
-               "name":"Null propagator"
-            },
-            {
-               "name":"Nullable types"
-            }
-         ]
-      },
-      {
-         "name":"O",
-         "words":[
-            {
-               "name":"Out"
-            }
-         ]
-      },
-      {
-         "name":"P",
-         "words":[
-            {
-               "name":"Pattern matching"
-            },
-            {
-               "name":"Property initializers"
-            },
-            {
-               "name":"Partial types + methods"
-            }
-         ]
-      },
-      {
-         "name":"R",
-         "words":[
-            {
-               "name":"Ref variables ( in function + local )"
-            },
-            {
-               "name":"Razor"
-            },
-            {
-               "name":"Roslyn"
-            }
-         ]
-      },
-      {
-         "name":"S",
-         "words":[
-            {
-               "name":"(.NET) Standard"
-            },
-            {
-               "name":"Span<T>"
-            },
-            {
-               "name":"string interpolation"
-            },
-            {
-               "name":"Static imports"
-            },
-            {
-               "name":"SignalR"
-            },
-            {
-               "name":"structs"
-            },
-            {
-               "name":"Static classes"
-            }
-         ]
-      },
-      {
-         "name":"T",
-         "words":[
-            {
-               "name":"tuple"
-            },
-            {
-               "name":"task"
-            }
-         ]
-      },
-      {
-         "name":"U",
-         "words":[
-            {
-               "name":"Using for IDisposable"
-            },
-            {
-               "name":"unboxing"
-            }
-         ]
-      },
-      {
-         "name":"V",
-         "words":[
-            {
-               "name":"var"
-            }
-         ]
-      }
-	  ,
-      {
-         "name":"Y",
-         "words":[
-            {
-               "name":"yield"
-            }
-         ]
-      }	
-   ]
+  "name": ".net Core A To Z",
+  "cards": [
+    {
+      "name": "A",
+      "words": [
+        {
+          "name": "async / await",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"
+        },
+        {
+          "name": "Auto implemented properties",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties"
+        },
+        {
+          "name": "Anonymous methods",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods"
+
+        },
+        {
+          "name": "attributes",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/"
+        },
+        {
+          "name": "ASP.Net",
+          "officialLink": "https://docs.microsoft.com/en-us/aspnet/"
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "words": [
+        {
+          "name": "Boxing",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing"
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "words": [
+        {
+          "name": "CallerInfo attributes",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/caller-information"
+        }
+
+      ]
+    },
+    {
+      "name": "D",
+      "words": [
+        {
+          "name": "Delegates",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/"
+        },
+        {
+          "name": "Dynamic",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic"
+        }
+      ]
+    },
+    {
+      "name": "E",
+      "words": [
+        {
+          "name": "Expando",
+          "officialLink": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752492(v%3Dvs.85)"
+        },
+        {
+          "name": "Expression bodied members",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members"
+        },
+        {
+          "name": "Exception filters",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/when"
+        },
+        {
+          "name": "extension methods",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods"
+        },
+        {
+          "name": "Entity Framework",
+          "officialLink": "https://docs.microsoft.com/en-us/ef/"
+        },
+        {
+          "name": "Events",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/"
+        }
+      ]
+    },
+    {
+      "name": "G",
+      "words": [
+        {
+          "name": "Generic Constraints",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters"
+        },
+        {
+          "name": "Generics covariance / contravariance",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance"
+        },
+        {
+          "name": "Generics",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/"
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "words": [
+        {
+          "name": "health check",
+          "officialLink": "https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-2.2"
+        }
+      ]
+    },
+    {
+      "name": "I",
+      "words": [
+        {
+          "name": "IDisposable",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/api/system.idisposable",
+          "additionalLinks": {
+            "implement": "https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose"
+           }
+        }
+
+      ]
+    },
+    {
+      "name": "J",
+      "words": [
+        {
+          "name": "jwt validation, authorization ,authentication ",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/secure-net-microservices-web-applications/"
+        }
+      ]
+    },
+    {
+      "name": "K",
+      "words": [
+        {
+          "name": "kestrel",
+          "officialLink": "https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-2.2",
+          "additionalLinks": {
+            "vs_lambda": "https://docs.microsoft.com/en-us/dotnet/csharp/local-functions-vs-lambdas"
+           }
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "words": [
+        {
+          "name": "Local functions",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions",
+          "additionalLinks": {
+            "vs_lambda": "https://docs.microsoft.com/en-us/dotnet/csharp/local-functions-vs-lambdas"
+           }
+        },
+        {
+          "name": "Linq",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/standard/using-linq"
+        },
+        {
+          "name": "Lambda",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions",
+          "additionalLinks": {
+            "vs_lambda": "https://docs.microsoft.com/en-us/dotnet/csharp/local-functions-vs-lambdas"
+           }
+        }
+      ]
+    },
+    {
+      "name": "M",
+      "words": [
+        {
+          "name": "Memory<T>",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/api/system.memory-1.-ctor?view=netcore-2.2"
+        }
+      ]
+    },
+    {
+      "name": "N",
+      "words": [
+        {
+          "name": "Nameof",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/nameof"
+        },
+        {
+          "name": "Null conditional/propagator",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-conditional-operators"
+        },
+        {
+          "name": "Nullable types",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/"
+        }
+      ]
+    },
+    {
+      "name": "O",
+      "words": [
+        {
+          "name": "Out",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier"
+        }
+      ]
+    },
+    {
+      "name": "P",
+      "words": [
+        {
+          "name": "Pattern matching",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching"
+        },
+        {
+          "name": "Property initializers",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/properties"
+        },
+        {
+          "name": "Partial types",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/partial-type"
+        },
+        {
+          "name": "Partial methods",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/partial-method"
+        }
+
+      ]
+    },
+    {
+      "name": "R",
+      "words": [
+        {
+          "name": "Ref variables in function ",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref"
+        },
+        {
+          "name": "Ref variables in local",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref"
+        },
+        {
+          "name": "Razor",
+          "officialLink": "https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.2&tabs=visual-studio"
+        },
+        {
+          "name": "Roslyn",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/"
+        }
+      ]
+    },
+    {
+      "name": "S",
+      "words": [
+        {
+          "name": "(.NET) Standard",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/standard/net-standard"
+        },
+        {
+          "name": "Span<T>",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/api/system.span-1?view=netcore-2.2"
+        },
+        {
+          "name": "string interpolation",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated",
+          "additionalLinks": {
+            "EFStringInterpolation": "https://docs.microsoft.com/en-us/ef/core/querying/raw-sql"
+          }
+        },
+        {
+          "name": "Static imports",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-static"
+        },
+        {
+          "name": "SignalR",
+          "officialLink": "https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-2.2"
+        },
+        {
+          "name": "structs",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/struct"
+        },
+        {
+          "name": "Static classes",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members"
+        }
+      ]
+    },
+    {
+      "name": "T",
+      "words": [
+        {
+          "name": "tuple",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/tuples"
+        },
+        {
+          "name": "task",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=netframework-4.7.2"
+        }
+      ]
+    },
+    {
+      "name": "U",
+      "words": [
+        {
+          "name": "Using for IDisposable",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=netframework-4.7.2"
+        },
+        {
+          "name": "unboxing",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing"
+        }
+      ]
+    },
+    {
+      "name": "V",
+      "words": [
+        {
+          "name": "var",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var"
+        }
+      ]
+    },
+    {
+      "name": "Y",
+      "words": [
+        {
+          "name": "yield",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield"
+        }
+      ]
+    }
+    ,
+    {
+      "name": "W",
+      "words": [
+        {
+          "name": "when",
+          "officialLink": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/when"
+        }
+      ]
+    }
+  ]
 }

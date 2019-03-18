@@ -28,6 +28,7 @@ class Card{
  class Word{
 	public string name;
 	public string cardsID;
+	public string officialLink;
  }
 }
 @{
@@ -46,7 +47,7 @@ class Card{
         var t = new Word();
         t.cardsID = rowWord["cardsID"].ToString();
 		t.name = rowWord["name"].ToString();
-		
+		t.officialLink= rowWord["officialLink"].ToString();
 		cardsList[t.cardsID].Words.Add(t);
         
 	}
@@ -55,10 +56,10 @@ class Card{
 @{
     foreach(var card in cardsList){
 		var nrWord=1;
-		<text>## @card.Value.name</text>
+		<text>## @card.Value.name</text> 
 		@Raw(nl)
 		foreach(var word in card.Value.Words){
-			@(nrWord++)<text>. </text>@word.name @Raw(nl)
+			@(nrWord++)<text>. </text>@word.name  @Raw(word.officialLink) @Raw(nl)
 		}
 	}
 }
