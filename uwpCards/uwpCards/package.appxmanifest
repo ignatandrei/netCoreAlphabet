@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="31645ignatandrei.NETCoreAlphabet" Version="1.0.6.0" Publisher="CN=2BDBC6BD-3338-4EAB-AB74-5769DED02B9F" />
+  <Identity Name="31645ignatandrei.NETCoreAlphabet" Version="1.0.10.0" Publisher="CN=2BDBC6BD-3338-4EAB-AB74-5769DED02B9F" />
   <mp:PhoneIdentity PhoneProductId="2d7d78b2-149f-4cef-b79d-9de4e5f0e405" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>NETCoreAlphabet</DisplayName>
@@ -17,7 +17,12 @@
     <Application Id="App" StartPage="index.html">
       <uap:VisualElements DisplayName=".NET Core Alphabet" Description="This application wants to list the most important keywords and technologies in C# / .NET Core ecosystem.Does not want to have third party libraries, just the Microsoft ones. That's why EntityFramework is here and AutoMapper will not be here.Also, it wants to list the important features , that's why Expando will be mentioned and HttpClient will not be here." BackgroundColor="transparent" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="images\BadgeLogo.png" />
-        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
+        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png" ShortName="NETCoreAlphabet">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
         <uap:SplashScreen Image="images\splashscreen.png" />
       </uap:VisualElements>

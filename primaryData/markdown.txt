@@ -59,7 +59,7 @@ class Card{
 		<text>## @card.Value.name</text> 
 		@Raw(nl)
 		foreach(var word in card.Value.Words){
-			@(nrWord++)<text>. </text>@word.name  @Raw(word.officialLink) @Raw(nl)
+			@(nrWord++)<text>. </text>@word.name  <a href='@Raw(word.officialLink)' target='_blank'>@Raw(word.officialLink)</a> @Raw(nl)
 		}
 	}
 }
