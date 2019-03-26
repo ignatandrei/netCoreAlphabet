@@ -1,5 +1,7 @@
 # .netCoreAlphabet
 [![Build Status](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_apis/build/status/ignatandrei.netCoreAlphabet?branchName=master)](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_build/latest?definitionId=3&branchName=master)
+![Website](https://img.shields.io/website/https/ignatandrei.github.io/netCoreAlphabet.svg)
+<a href='https://play.google.com/store/apps/details?id=com.github.ignatandrei.netcorealphabet'> <img src='https://img.shields.io/badge/Android-GooglePlay-blue.svg'></a>
 
 ## Why
 This site wants to list the most important keywords and technologies  in C# / .NET Core ecosystem
