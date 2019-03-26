@@ -3,6 +3,8 @@
 [![Website](https://img.shields.io/website/https/ignatandrei.github.io/netCoreAlphabet.svg)](https://ignatandrei.github.io/netCoreAlphabet)
 <a href='https://play.google.com/store/apps/details?id=com.github.ignatandrei.netcorealphabet'> <img src='https://img.shields.io/badge/Android-GooglePlay-blue.svg'></a>
 
+[![GitHub license](https://img.shields.io/github/license/ignatandrei/netCoreAlphabet.svg)](https://github.com/ignatandrei/netCoreAlphabet)
+
 ## Why
 This site wants to list the most important keywords and technologies  in C# / .NET Core ecosystem
 
