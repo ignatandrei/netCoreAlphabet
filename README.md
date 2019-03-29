@@ -2,6 +2,7 @@
 [![Build Status](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_apis/build/status/ignatandrei.netCoreAlphabet?branchName=master)](https://dev.azure.com/ignatandrei0674/netCoreAlphabet/_build/latest?definitionId=3&branchName=master)
 [![Website](https://img.shields.io/website/https/ignatandrei.github.io/netCoreAlphabet.svg)](https://ignatandrei.github.io/netCoreAlphabet)
 <a href='https://play.google.com/store/apps/details?id=com.github.ignatandrei.netcorealphabet'> <img src='https://img.shields.io/badge/Android-GooglePlay-blue.svg'></a>
+<a href='https://www.microsoft.com/en-us/p/netcorealphabet/9pdx9rv0xhds'> <img src='https://img.shields.io/badge/Windows-Store-blue.svg'></a>
 [![GitHub license](https://img.shields.io/github/license/ignatandrei/netCoreAlphabet.svg)](https://github.com/ignatandrei/netCoreAlphabet)
 
 ## Why
