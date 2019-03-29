@@ -16,7 +16,7 @@ Also, it wants to list the important features , that's why Expando will be menti
 
 The database is the netCoreAlphabet.json file in the https://github.com/ignatandrei/netCoreAlphabet/tree/master/primaryData
 
-Site at https://ignatandrei.github.io/netCoreAlphabet/ , Android https://play.google.com/store/apps/details?id=com.github.ignatandrei.netcorealphabet&hl=en
+Site at https://ignatandrei.github.io/netCoreAlphabet/ , Android https://play.google.com/store/apps/details?id=com.github.ignatandrei.netcorealphabet&hl=en , Windows App https://www.microsoft.com/en-us/p/netcorealphabet/9pdx9rv0xhds
 
 
 Feel free to make a PR request !

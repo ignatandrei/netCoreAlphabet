@@ -1,12 +1,16 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)"
+  >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="cards">.NET Core Alphabet</a>
-      <a mat-list-item routerLink="about">About app</a>      
+      <a mat-list-item routerLink="about">About app</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -16,12 +20,41 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="(isHandset$ | async)"
+      >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>NetCoreAlphabet</span>
+      <span><a mat-list-item routerLink="cards">NetCoreAlphabet </a> </span>
+      <span class="example-fill-remaining-space"></span>
+
+      <span><a
+          target="_blank"
+          href="https://ignatandrei.github.io/netCoreAlphabet/"
+        >
+          <img src="assets/images/angular.ico" width="20" height="20" /> Web
+        </a> </span
+      ><span>
+        <a
+          target="blank"
+          href="https://play.google.com/store/apps/details?id=com.github.ignatandrei.netcorealphabet&hl=en"
+        >
+          <img
+            src="assets/images/android.png"
+            width="20"
+            height="20"
+          />Android</a
+        > </span
+      ><span>
+        <a
+          target="_blank"
+          href="https://www.microsoft.com/en-us/p/netcorealphabet/9pdx9rv0xhds"
+        >
+          <img src="assets/images/win.ico" width="20" height="20" />
+          Windows Store
+        </a>
+      </span>
     </mat-toolbar>
-    
+
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

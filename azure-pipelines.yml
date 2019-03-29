@@ -39,7 +39,8 @@ jobs:
       npm install -g @angular/cli
       npm install
       ng build --prod --build-optimizer --output-path $(Build.ArtifactStagingDirectory)/site/
-      
+      echo 404 for github
+      cat ./404GitHub.txt $(Build.ArtifactStagingDirectory)/site/index.html > $(Build.ArtifactStagingDirectory)/site/404.html
       
     displayName: 'npm install and build'
     
