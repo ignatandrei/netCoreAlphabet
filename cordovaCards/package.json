@@ -1,12 +1,12 @@
 {
     "name": "com.github.ignatandrei.netcorealphabet",
     "displayName": "NetCoreAlphabet",
-    "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "version": "1.1.0",
+    "description": ".NET Core Alphabet.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Apache Cordova Team",
-    "license": "Apache-2.0"
+    "author": "Andrei Ignat",
+    "license": "MIT"
 }
