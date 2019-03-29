@@ -5,16 +5,24 @@
   <title>NetCoreAlphabet</title>
   <!-- <base href="/"> -->
 <script>
-  var isCordovaApp = !!window.cordova;
-  var hrefApp=".";
-  if(!isCordovaApp){
-    var baseHref = window.location.href.split('/');
-    baseHref.pop();
-    hrefApp=baseHref.join('/') +'/';
-    //window.alert(hrefApp);
-  }
+ 
+    var isCordovaApp = !!window.cordova;
+    var isWindowApp = !!window.MSApp;
+    if (isCordovaApp) {
+        hrefApp = ".";
+    }
+    if (isWindowApp) {
+        hrefApp = "./";
+    }
+
+    if (!(isCordovaApp || isWindowApp)) {
+        var baseHref = window.location.href.split('/');
+        baseHref.pop();
+        hrefApp = baseHref.join('/') + '/';
+        //window.alert(hrefApp);
+    }
     document.write('<base href="' + hrefApp+ '" />');
-    </script>
+</script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
