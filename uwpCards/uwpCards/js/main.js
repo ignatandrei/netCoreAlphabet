@@ -1,2 +1,2 @@
 ﻿// Your code here!
-window.location.href='dist/index.html';
+window.location.href='dist/index.html';    
