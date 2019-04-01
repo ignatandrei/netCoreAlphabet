@@ -65,7 +65,7 @@ jobs:
       artifactName: drop
       downloadPath: $(Build.ArtifactStagingDirectory)
   - script: |
-      robocopy $(Build.ArtifactStagingDirectory)\drop\site\ cordovaCards\www\dist  /MIR /XD
+      (robocopy $(Build.ArtifactStagingDirectory)\drop\site\ cordovaCards\www\dist  /MIR /XD) ^& IF %ERRORLEVEL% LSS 8 SET ERRORLEVEL = 0
       
     displayName: 'copy files from artifcat to cordova '
 
