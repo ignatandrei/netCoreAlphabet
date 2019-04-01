@@ -39,10 +39,14 @@ jobs:
       npm install -g @angular/cli
       npm install
       ng build --prod --build-optimizer --output-path $(Build.ArtifactStagingDirectory)/site/
+    displayName: 'npm install and build'
+
+  - script: |
+      cd angularCards
       echo 404 for github
       cat ./404GitHub.txt $(Build.ArtifactStagingDirectory)/site/index.html > $(Build.ArtifactStagingDirectory)/site/404.html
       
-    displayName: 'npm install and build'
+    displayName: 'adding github 404'
     
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop' 
@@ -60,16 +64,19 @@ jobs:
     inputs:
       artifactName: drop
       downloadPath: $(Build.ArtifactStagingDirectory)
+  - script: |
+      robocopy $(Build.ArtifactStagingDirectory)\drop\site\ cordovaCards\www\dist  /MIR /XD
+      
+    displayName: 'copy files from artifcat to cordova '
 
   - script: |
       call npm install -g q
       call npm install -g cordova      
-      robocopy $(Build.ArtifactStagingDirectory)\drop\site\ cordovaCards\www\dist  /MIR /XD
       cd cordovaCards
       call cordova platform add android
       call cordova build android --release  
       
-    displayName: 'cordova'
+    displayName: 'cordova build android'
   - task: AndroidSigning@3
     inputs:
         apkFiles: '**/*.apk' #how to change name of apk file? mystery...
