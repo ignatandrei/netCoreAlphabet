@@ -31,7 +31,7 @@ jobs:
   - script: |
       stankins.console execute -o ReceiveRestFromFile -a primaryData/netCoreAlphabet.json -o SenderToTypeScript -a "" -o TransformerConcatenateOutputString -a a.ts -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
       stankins.console execute -o ReceiveRestFromFile -a primaryData/netCoreAlphabet.json -o SenderToRazorFromFile -a primaryData/markdown.txt -o TransformerConcatenateOutputString -a cards.md -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
-      #stankins.console execute -o YamlReader -a https://raw.githubusercontent.com/ignatandrei/netCoreAlphabet/master/azure-pipelines.yml -o SenderYamlAzurePipelineMermaid -a "" -o TransformerConcatenateOutputString -a mermaid.html -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
+      stankins.console execute -o YamlReader -a https://raw.githubusercontent.com/ignatandrei/netCoreAlphabet/master/azure-pipelines.yml -o SenderYamlAzurePipelineMermaid -a "" -o TransformerConcatenateOutputString -a mermaid.html -o SenderOutputToFolder -a $(Build.ArtifactStagingDirectory)/data/ -a false
     displayName: 'json to typescript'
     
     
